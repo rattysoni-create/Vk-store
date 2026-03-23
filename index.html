@@ -19,14 +19,26 @@ color:#222;
 /* NAVBAR */
 nav{
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:15px 50px;
+justify-content:space-between;
+padding:15px 30px;
 background:#f3e6d6;
 }
 
+nav div{
+flex:1;
+}
+
+/* CENTER LOGO */
+.logo{
+text-align:center;
+}
+
 .logo img{
-height:60px;
+height:70px;
+display:block;
+margin:auto;
+mix-blend-mode:multiply;
 }
 
 /* HERO */
@@ -34,7 +46,7 @@ height:60px;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:80px 60px;
+padding:60px 30px;
 background:linear-gradient(to right,#caa45f,#e8cfa1);
 flex-wrap:wrap;
 }
@@ -45,70 +57,70 @@ color:white;
 }
 
 .hero-text h1{
-font-size:55px;
+font-size:45px;
 font-family:'Playfair Display';
 }
 
 .hero-text p{
-font-size:22px;
+font-size:18px;
 margin:10px 0;
 }
 
 .hero-text button{
-padding:12px 30px;
+padding:12px 25px;
 background:#fff;
 border:none;
-font-weight:bold;
 }
 
 /* HERO IMAGE */
 .hero img{
-width:420px;
-border-radius:25px;
+width:320px;
+border-radius:20px;
+margin-top:20px;
 }
 
 /* SECTION */
 .section{
-padding:70px 60px;
+padding:50px 20px;
 text-align:center;
 background:#f7efe5;
 }
 
 .title{
 font-family:'Playfair Display';
-font-size:42px;
-margin-bottom:50px;
+font-size:32px;
+margin-bottom:30px;
 color:#5a4632;
 }
 
 /* GRID */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
 .card{
 background:white;
-border-radius:20px;
+border-radius:15px;
 overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
 }
 
 .card img{
 width:100%;
-height:260px;
+height:200px;
 object-fit:cover;
 }
 
 .card h3{
-padding:15px;
-font-size:18px;
+padding:10px;
+font-size:16px;
 }
 
 .card button{
-margin-bottom:20px;
-padding:10px 25px;
+margin-bottom:15px;
+padding:8px 20px;
 background:#f3e6d6;
 border:none;
 }
@@ -117,20 +129,22 @@ border:none;
 .about{
 display:flex;
 align-items:center;
-gap:50px;
-padding:80px;
+gap:30px;
+padding:50px 20px;
 background:#f3e6d6;
 flex-wrap:wrap;
 }
 
 .about img{
-width:450px;
-border-radius:25px;
+width:100%;
+max-width:300px;
+border-radius:20px;
 }
 
 .about-text h2{
 font-family:'Playfair Display';
-font-size:38px;
+font-size:28px;
+margin-bottom:10px;
 }
 </style>
 </head>
@@ -141,10 +155,10 @@ font-size:38px;
 <div>Home</div>
 
 <div class="logo">
-<img src="logo.png">
+<img src="logo.png" alt="VK Logo">
 </div>
 
-<div>Contact</div>
+<div style="text-align:right;">Contact</div>
 </nav>
 
 <section class="hero">
