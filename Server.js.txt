@@ -1,0 +1,21 @@
+const express = require("express");
+const app = express();
+app.use(express.json());
+app.use(express.static("public"));
+
+
+let products = [];
+
+
+app.post("/add-product", (req, res) => {
+  products.push(req.body);
+  res.send({ message: "Product added" });
+});
+
+
+app.get("/products", (req, res) => {
+  res.send(products);
+});
+
+
+app.listen(3000, () => console.log("Server running"));
