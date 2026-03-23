@@ -1,3 +1,7 @@
+
+.card h3{
+padding:10px;
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,23 +9,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VK Jewellers</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
 font-family:Poppins;
-background:#f9f2e9;
+background:#f6efe6;
 color:#222;
 }
 
-/* NAV */
+/* NAVBAR */
 nav{
 display:flex;
 justify-content:space-between;
-padding:20px 50px;
+align-items:center;
+padding:20px 60px;
 background:#f3e6d6;
+}
+
+.logo{
+font-family:'Playfair Display';
+font-size:28px;
+color:#b48a3c;
 }
 
 /* HERO */
@@ -29,8 +40,8 @@ background:#f3e6d6;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:60px;
-background:linear-gradient(to right,#b88a44,#e8cfa1);
+padding:80px 60px;
+background:#caa45f;
 flex-wrap:wrap;
 }
 
@@ -40,72 +51,158 @@ color:white;
 }
 
 .hero-text h1{
-font-size:50px;
+font-size:60px;
 font-family:'Playfair Display';
 }
 
 .hero-text p{
-font-size:20px;
+font-size:22px;
 margin:10px 0;
 }
 
 .hero-text button{
-padding:12px 25px;
-background:#f3e6d6;
-border:1px solid #d6b98c;
+padding:12px 30px;
+background:white;
+border:none;
+font-weight:bold;
 }
 
-/* HERO IMAGE */
 .hero img{
-width:350px;
-border-radius:20px;
+width:420px;
+border-radius:25px;
 }
 
 /* SECTION */
 .section{
-padding:60px 40px;
-background:#f7efe5;
+padding:70px 60px;
 text-align:center;
-border-top:1px solid #e5d3b3;
+background:#f7efe5;
 }
 
 .title{
 font-family:'Playfair Display';
-font-size:40px;
-margin-bottom:40px;
-color:#6b4f2c;
+font-size:42px;
+margin-bottom:50px;
+color:#5a4632;
 }
 
 /* GRID */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
 }
 
 .card{
-background:#fff;
-border-radius:15px;
+background:white;
+border-radius:20px;
 overflow:hidden;
-border:1px solid #e5d3b3;
-box-shadow:0 8px 25px rgba(180,140,80,0.15);
-transition:0.3s;
-}
-
-.card:hover{
-transform:scale(1.03);
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 .card img{
 width:100%;
-height:250px;
+height:260px;
 object-fit:cover;
 }
 
 .card h3{
-padding:10px;
+padding:15px;
+font-size:18px;
 }
 
+.card button{
+margin-bottom:20px;
+padding:10px 25px;
+background:#f3e6d6;
+border:none;
+}
+
+/* ABOUT */
+.about{
+display:flex;
+align-items:center;
+gap:50px;
+padding:80px;
+background:#f3e6d6;
+flex-wrap:wrap;
+}
+
+.about img{
+width:450px;
+border-radius:25px;
+}
+
+.about-text h2{
+font-family:'Playfair Display';
+font-size:38px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div>Home</div>
+<div class="logo">VK Jewellers</div>
+<div>Contact</div>
+</nav>
+
+<section class="hero">
+<div class="hero-text">
+<h1>Timeless Jewellery</h1>
+<p>for Every Occasion</p>
+<button>Explore Collections</button>
+</div>
+
+<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
+</section>
+
+<section class="section">
+<h2 class="title">Our Collections</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d">
+<h3>Bridal Jewellery</h3>
+<button>View Bridal</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f">
+<h3>Daily Wear</h3>
+<button>View Daily</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1603561596112-0a132b757442">
+<h3>Gold Collection</h3>
+<button>View Gold</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
+<h3>Diamond Collection</h3>
+<button>View Diamond</button>
+</div>
+
+</div>
+</section>
+
+<section class="about">
+
+<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
+
+<div class="about-text">
+<h2>Timeless Craftsmanship</h2>
+<p>We design jewellery with elegance, tradition and perfection.</p>
+</div>
+
+</section>
+
+</body>
+</html>
 .card button{
 margin-bottom:15px;
 padding:8px 20px;
