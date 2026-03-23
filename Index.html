@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VK Jewellers</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:Poppins;
+background:#f7efe5;
+color:#333;
+}
+
+/* NAV */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#f3e6d6;
+}
+
+.logo{
+font-family:'Playfair Display';
+font-size:28px;
+color:#b48a3c;
+}
+
+/* HERO */
+.hero{
+height:90vh;
+background:url('https://images.unsplash.com/photo-1627293509201-cd0c7800439c');
+background-size:cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+position:relative;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.4);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:55px;
+font-family:'Playfair Display';
+}
+
+.hero p{
+margin-top:10px;
+font-size:20px;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 30px;
+background:#d4af37;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+/* COLLECTION */
+.section{
+padding:60px 30px;
+text-align:center;
+}
+
+.title{
+font-size:40px;
+font-family:'Playfair Display';
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card h3{
+padding:10px;
+}
+
+.card button{
+margin-bottom:10px;
+padding:8px 20px;
+background:#d4af37;
+border:none;
+color:white;
+}
+
+/* ABOUT */
+.about{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:30px;
+padding:60px;
+}
+
+.about img{
+width:100%;
+max-width:400px;
+border-radius:20px;
+}
+
+.about-text{
+flex:1;
+}
+
+.about-text h2{
+font-family:'Playfair Display';
+font-size:35px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">VK Jewellers</div>
+<div>Home | Collections | Contact</div>
+</nav>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Timeless Jewellery</h1>
+<p>for Every Occasion</p>
+<button>Explore Collections</button>
+</div>
+</section>
+
+<section class="section">
+<h2 class="title">Our Collections</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d">
+<h3>Bridal Jewellery</h3>
+<button>View Bridal</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f">
+<h3>Daily Wear Jewellery</h3>
+<button>View Daily</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1603561596112-0a132b757442">
+<h3>Gold Heavy Collection</h3>
+<button>View Gold</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
+<h3>Diamond Collection</h3>
+<button>View Diamonds</button>
+</div>
+
+</div>
+</section>
+
+<section class="about">
+<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
+<div class="about-text">
+<h2>Timeless Craftsmanship</h2>
+<p>At VK Jewellers, we bring elegance with tradition and modern design.</p>
+</div>
+</section>
+
+</body>
+</html>
