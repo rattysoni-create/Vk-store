@@ -76,6 +76,85 @@ border-radius:20px;
 
 <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
 </section>
+<!-- COLLECTION SECTION -->
 
+<style>
+.section{
+padding:60px 40px;
+background:#f7efe5;
+text-align:center;
+}
+
+.title{
+font-family:'Playfair Display';
+font-size:40px;
+margin-bottom:40px;
+color:#5a4632;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.card{
+background:#fff;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card h3{
+padding:10px;
+font-size:18px;
+}
+
+.card button{
+margin-bottom:15px;
+padding:8px 20px;
+background:#e6d3b3;
+border:none;
+cursor:pointer;
+}
+</style>
+
+<section class="section">
+<h2 class="title">Our Collections</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d">
+<h3>Bridal Jewellery</h3>
+<button>View Bridal</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f">
+<h3>Daily Wear Jewellery</h3>
+<button>View Daily Wear</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1603561596112-0a132b757442">
+<h3>Gold Heavy Collection</h3>
+<button>View Gold</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
+<h3>Diamond Collection</h3>
+<button>View Diamonds</button>
+</div>
+
+</div>
+</section>
 </body>
 </html>
