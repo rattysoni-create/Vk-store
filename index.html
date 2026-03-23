@@ -1,25 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>VK Jewellers</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VK Jewellers</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+
 <style>
 body{
 margin:0;
-background:#f5ede4;
-text-align:center;
+font-family:Poppins;
+background:#f6efe6;
 }
 
-img{
-width:100%;
-max-width:100%;
+/* NAV */
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 50px;
+background:#f3e6d6;
+font-size:18px;
+}
+
+/* HERO */
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:60px;
+background:linear-gradient(to right,#caa45f,#e6c79c);
+}
+
+.hero-text{
+max-width:500px;
+color:white;
+}
+
+.hero-text h1{
+font-size:50px;
+font-family:'Playfair Display';
+}
+
+.hero-text p{
+font-size:20px;
+margin:10px 0;
+}
+
+.hero-text button{
+padding:12px 25px;
+background:#fff;
+border:none;
+}
+
+.hero img{
+width:400px;
+border-radius:20px;
 }
 </style>
 </head>
 
 <body>
 
-<img src="design.jpg">
+<nav>
+<div>Home &nbsp;&nbsp; Collections</div>
+<div>VK Jewellers</div>
+<div>Contact</div>
+</nav>
+
+<section class="hero">
+<div class="hero-text">
+<h1>Timeless Jewellery</h1>
+<p>For Every Occasion</p>
+<button>Explore Collections</button>
+</div>
+
+<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
+</section>
 
 </body>
 </html>
