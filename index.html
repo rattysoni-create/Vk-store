@@ -6,116 +6,215 @@
 <title>VK Jewellers</title>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Georgia', serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
-body {
-  background: #f8f5f0;
+body{
+    background:#fff;
 }
 
 /* NAVBAR */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 40px;
-  background: #efe7dc;
-  position: sticky;
-  top: 0;
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    border-bottom:1px solid #eee;
 }
 
-/* LEFT MENU */
-.nav-left {
-  display: flex;
-  gap: 25px;
+.logo img{
+    height:50px;
 }
 
-.nav-left a {
-  text-decoration: none;
-  color: #5a4634;
-  font-size: 16px;
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
 }
 
-/* LOGO CENTER */
-.logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+nav ul li{
+    cursor:pointer;
+    font-weight:500;
 }
 
-.logo img {
-  height: 60px;
-  width: auto;
-  display: block;
+/* HERO */
+.hero{
+    text-align:center;
+    padding:70px 20px;
 }
 
-/* RIGHT MENU */
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.hero h1{
+    font-size:38px;
 }
 
-.nav-right a {
-  text-decoration: none;
-  color: #5a4634;
-  font-size: 16px;
+.hero p{
+    color:#777;
+    margin-top:10px;
 }
 
-/* ICON STYLE */
-.icon {
-  font-size: 18px;
-  cursor: pointer;
+/* PRODUCTS */
+.products{
+    padding:40px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 10px 20px;
-  }
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+}
 
-  .nav-left {
-    gap: 15px;
-  }
+.card{
+    border:1px solid #eee;
+    padding:15px;
+    text-align:center;
+    transition:0.3s;
+    border-radius:8px;
+}
 
-  .logo img {
-    height: 45px;
-  }
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
 
-  .nav-right {
-    gap: 10px;
-  }
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:5px;
+}
+
+.card h3{
+    margin:10px 0;
+}
+
+.price{
+    color:#c9a14a;
+    font-weight:bold;
+}
+
+/* BUTTONS */
+.btn{
+    margin-top:10px;
+    padding:8px 15px;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.buy{
+    background:black;
+    color:white;
+}
+
+.whatsapp{
+    background:#25D366;
+    color:white;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid #eee;
+    margin-top:40px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
 }
 </style>
+
 </head>
 
 <body>
 
-<header class="navbar">
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">
+        <!-- Yaha apna logo daalo -->
+        <img src="logo.png" alt="VK Jewellers">
+    </div>
 
-  <!-- LEFT -->
-  <div class="nav-left">
-    <a href="#">Home</a>
-    <a href="#">Collections</a>
-  </div>
+    <ul>
+        <li>Home</li>
+        <li>Shop</li>
+        <li>Contact</li>
+    </ul>
+</nav>
 
-  <!-- LOGO -->
-  <div class="logo">
-    <img src="logo.png" alt="VK Jewellers">
-  </div>
+<!-- HERO -->
+<section class="hero">
+    <h1>VK Jewellers</h1>
+    <p>Premium Jewellery Collection</p>
+</section>
 
-  <!-- RIGHT -->
-  <div class="nav-right">
-    <a href="#">Contact</a>
-    <span class="icon">🔍</span>
-    <span class="icon">🛒</span>
-  </div>
+<!-- PRODUCTS -->
+<section class="products">
+<div class="product-grid">
 
-</header>
+<!-- PRODUCT 1 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638" alt="">
+<h3>Gold Ring</h3>
+<p class="price">₹25,000</p>
+
+<button class="btn buy">Buy Now</button>
+<a href="https://wa.me/919999999999" target="_blank">
+<button class="btn whatsapp">WhatsApp</button>
+</a>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e" alt="">
+<h3>Necklace</h3>
+<p class="price">₹55,000</p>
+
+<button class="btn buy">Buy Now</button>
+<a href="https://wa.me/919999999999" target="_blank">
+<button class="btn whatsapp">WhatsApp</button>
+</a>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1588449668365-d15e397f6787" alt="">
+<h3>Bangles</h3>
+<p class="price">₹40,000</p>
+
+<button class="btn buy">Buy Now</button>
+<a href="https://wa.me/919999999999" target="_blank">
+<button class="btn whatsapp">WhatsApp</button>
+</a>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f" alt="">
+<h3>Diamond Ring</h3>
+<p class="price">₹75,000</p>
+
+<button class="btn buy">Buy Now</button>
+<a href="https://wa.me/919999999999" target="_blank">
+<button class="btn whatsapp">WhatsApp</button>
+</a>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 VK Jewellers. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
